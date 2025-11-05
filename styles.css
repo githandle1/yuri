@@ -109,6 +109,13 @@ body {
     z-index: 10;
 }
 
+.invitation-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .invitation-image {
     max-width: 95%;
     max-height: 95vh;
@@ -126,6 +133,47 @@ body {
     transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+}
+
+.invitation-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+    animation: flyIn 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.wedding-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #1a1a1a;
+    margin-top: 15%;
+    text-align: center;
+}
+
+.invitation-details {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    font-size: 14px;
+    font-weight: 300;
+    color: #1a1a1a;
+    letter-spacing: 1px;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+.invitation-details .detail-item {
+    flex: 1;
+    text-align: center;
 }
 
 @keyframes flyIn {
@@ -153,10 +201,31 @@ body {
         font-size: 12px;
         margin-top: 15px;
     }
+
+    .wedding-text {
+        font-size: 16px;
+        margin-top: 12%;
+    }
+
+    .invitation-details {
+        font-size: 12px;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 8%;
+    }
 }
 
 @media (max-width: 480px) {
     .click-hint {
+        font-size: 11px;
+    }
+
+    .wedding-text {
+        font-size: 14px;
+        margin-top: 10%;
+    }
+
+    .invitation-details {
         font-size: 11px;
     }
 }
