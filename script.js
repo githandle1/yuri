@@ -1,7 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
     const envelopeWrapper = document.getElementById('envelopeWrapper');
     const invitation = document.getElementById('invitation');
+    const invitationImage = document.getElementById('invitationImage');
     let isOpened = false;
+
+    // Ensure the latest invitation image is loaded (bypass caches)
+    if (invitationImage) {
+        const versionParam = `v=${Date.now()}`;
+        const baseSrc = "yuri's invite.png";
+        invitationImage.src = `${baseSrc}?${versionParam}`;
+    }
 
     envelopeWrapper.addEventListener('click', function() {
         if (!isOpened) {
