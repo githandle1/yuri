@@ -118,7 +118,7 @@ body {
 
 .invitation-image {
     max-width: 95%;
-    max-height: 95vh;
+    max-height: 90vh;
     width: auto;
     height: auto;
     object-fit: contain;
@@ -133,6 +133,10 @@ body {
     transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    image-rendering: auto;
+    -ms-interpolation-mode: bicubic;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .invitation-overlay {
@@ -195,6 +199,7 @@ body {
 @media (max-width: 768px) {
     .envelope-image, .invitation-image {
         max-width: 95%;
+        max-height: 90vh;
     }
 
     .click-hint {
