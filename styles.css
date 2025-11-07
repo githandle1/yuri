@@ -62,7 +62,7 @@ body {
     width: auto;
     height: auto;
     object-fit: contain;
-    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.2));
+    filter: brightness(1.15) saturate(0.85) drop-shadow(0 10px 30px rgba(0, 0, 0, 0.2));
     transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     display: block;
     outline: none;
