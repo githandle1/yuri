@@ -116,6 +116,51 @@ body {
     align-items: center;
 }
 
+.ring-decoration {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    pointer-events: none;
+    z-index: 1;
+    animation: fadeInRing 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    opacity: 0;
+}
+
+.ring-top-left {
+    top: 5%;
+    left: 5%;
+    transform: translate(-20%, -20%);
+}
+
+.ring-top-right {
+    top: 5%;
+    right: 5%;
+    transform: translate(20%, -20%);
+}
+
+.ring-bottom-left {
+    bottom: 5%;
+    left: 5%;
+    transform: translate(-20%, 20%);
+}
+
+.ring-bottom-right {
+    bottom: 5%;
+    right: 5%;
+    transform: translate(20%, 20%);
+}
+
+@keyframes fadeInRing {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 .invitation-image {
     max-width: 95%;
     max-height: 90vh;
@@ -218,6 +263,11 @@ body {
         gap: 8px;
         margin-bottom: 8%;
     }
+
+    .ring-decoration {
+        width: 60px;
+        height: 60px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -232,5 +282,10 @@ body {
 
     .invitation-details {
         font-size: 11px;
+    }
+
+    .ring-decoration {
+        width: 50px;
+        height: 50px;
     }
 }
