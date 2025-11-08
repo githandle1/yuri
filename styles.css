@@ -114,6 +114,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #ffffff;
+    border-radius: 0;
 }
 
 .ring-decoration {
@@ -182,6 +184,8 @@ body {
     -ms-interpolation-mode: bicubic;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    clip-path: inset(3% 3% 3% 3% round 0);
+    -webkit-clip-path: inset(3% 3% 3% 3%);
 }
 
 .invitation-overlay {
