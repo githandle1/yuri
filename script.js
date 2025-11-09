@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Ensure the latest invitation image is loaded (bypass caches)
     if (invitationImage) {
         const versionParam = `v=${Date.now()}`;
-        const baseSrc = "yuri's invite-2.png";
+        const baseSrc = "yuri-invite-2.jpg";
         invitationImage.src = `${baseSrc}?${versionParam}`;
     }
 
