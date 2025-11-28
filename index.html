@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yuri & David's Wedding Invitation</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
     <div class="container">
@@ -17,6 +17,10 @@
         <div class="invitation" id="invitation" style="display: none;">
             <div class="invitation-wrapper">
                 <img src="yuri-invite-3.jpg" alt="Wedding Invitation" class="invitation-image" id="invitationImage">
+                <!-- Schedule Button -->
+                <button class="schedule-button" id="scheduleButton">
+                    <img src="schedule here button.jpg" alt="Schedule" class="schedule-button-image">
+                </button>
                 <!-- Decorative Rings -->
                 <svg class="ring-decoration ring-top-left" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="50" cy="50" r="35" fill="none" stroke="#1a1a1a" stroke-width="1.5" opacity="0.3"/>
@@ -38,6 +42,15 @@
                     <circle cx="50" cy="50" r="25" fill="none" stroke="#1a1a1a" stroke-width="1" opacity="0.2"/>
                     <circle cx="50" cy="50" r="15" fill="none" stroke="#1a1a1a" stroke-width="0.8" opacity="0.15"/>
                 </svg>
+            </div>
+        </div>
+
+        <!-- Schedule Modal -->
+        <div class="schedule-modal" id="scheduleModal" style="display: none;">
+            <div class="schedule-modal-overlay" id="scheduleModalOverlay"></div>
+            <div class="schedule-modal-content">
+                <button class="schedule-close-button" id="scheduleCloseButton">&times;</button>
+                <img src="schedule.jpg" alt="Schedule" class="schedule-image">
             </div>
         </div>
     </div>
