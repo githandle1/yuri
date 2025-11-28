@@ -243,14 +243,13 @@ body {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background: #e1f5fe;
+    background: transparent;
     border: none;
-    padding: 8px;
+    padding: 0;
     cursor: pointer;
     z-index: 20;
     transition: transform 0.2s ease;
     outline: none;
-    border-radius: 0;
     box-shadow: none;
 }
 
@@ -263,16 +262,13 @@ body {
 }
 
 .schedule-button-image {
-    width: 280px;
+    width: 224px;
     height: auto;
     display: block;
     border: none !important;
     outline: none !important;
-    border-radius: 0 !important;
     box-shadow: none !important;
-    -webkit-border-radius: 0 !important;
-    -moz-border-radius: 0 !important;
-    background: #e1f5fe;
+    background: transparent;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -362,7 +358,7 @@ body {
     }
 
     .schedule-button-image {
-        width: 200px;
+        width: 160px;
     }
 }
 
@@ -373,6 +369,6 @@ body {
     }
 
     .schedule-button-image {
-        width: 160px;
+        width: 128px;
     }
 }
