@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const scheduleButtonImage = document.querySelector('.schedule-button-image');
     if (scheduleButtonImage) {
         const versionParam = `v=${Date.now()}`;
-        const baseSrc = "schedule here button.jpg";
+        const baseSrc = "new button.jpg";
         scheduleButtonImage.src = `${baseSrc}?${versionParam}`;
     }
 
